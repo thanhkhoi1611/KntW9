@@ -59,7 +59,7 @@ local Tabs = {
     A = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
 }
 -- Script
-Tabs.A:AddSection("Farming Scripts");
+Tabs.A:AddSection("Script");
 
 Tabs.A:AddButton({
     Title = "W-azure Hub",
