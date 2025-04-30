@@ -25,7 +25,7 @@ v23.Parent = v22;
 v23.BackgroundColor3 = Color3.fromRGB(0, 0, 0);
 v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
-v23.Size = UDim2.new(0, 70 0, 70);
+v23.Size = UDim2.new(0, 70, 0, 70);
 v23.Draggable = true;
 v23.Image = "http://www.roblox.com/asset/?id=125891619064938"; 
 
