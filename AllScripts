@@ -5,7 +5,7 @@ repeat wait() until game:IsLoaded()
 local Window = Fluent:CreateWindow({
     Title = "Script Tổng Hợp",
     SubTitle = "by thanhkhoi1611",
-    TabWidth = 160,
+    TabWidth = 180,
     Size = UDim2.fromOffset(520, 420),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Aqua",
