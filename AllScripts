@@ -5,8 +5,8 @@ repeat wait() until game:IsLoaded()
 local Window = Fluent:CreateWindow({
     Title = "Script Tổng Hợp",
     SubTitle = "by thanhkhoi1611",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(530, 350),
+    TabWidth = 200,
+    Size = UDim2.fromOffset(530,-450),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Aqua",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
@@ -55,14 +55,14 @@ v23.MouseButton1Down:Connect(function()
 end)
 -- TABS
 local Tabs = {
-    A = Window:AddTab({ Title = "", Icon = "🇻🇳" }),
+    A = Window:AddTab({ Title = "Main", Icon = "" }),
 }
 -- Script
 Tabs.A:AddSection("Script");
 
 Tabs.A:AddButton({
     Title = "Banana Cat Hub",
-    Description = "1h Key",
+  NumberSequenceKe"Get Free Key",
     Callback = function()
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
 getgenv().Key = "stdBFPlRKpiHeUfeTValOaJIicgMYQWm"
