@@ -1,82 +1,67 @@
--- FLuent UI
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
--- Name
-local Window = Fluent:CreateWindow({
-    Title = "Script Tổng Hợp",
-    SubTitle = "by thanhkhoi1611",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(530, 350),
-    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Aqua",
-    MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
-})
--- Image
-local v22 = Instance.new("ScreenGui");
-local v23 = Instance.new("ImageButton");
-local v24 = Instance.new("UICorner");
-local v25 = Instance.new("ParticleEmitter");
-local v26 = game:GetService("TweenService");
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
 
-v22.Parent = game.CoreGui;
-v22.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-v23.Parent = v22;
-v23.BackgroundColor3 = Color3.fromRGB(0, 0, 0);
-v23.BorderSizePixel = 0;
-v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
-v23.Size = UDim2.new(0, 50, 0, 50);
-v23.Draggable = true;
-v23.Image = "http://www.roblox.com/asset/?id=132676475432173"; 
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
+ImageButton.Size = UDim2.new(0, 40, 0, 40)
+ImageButton.Draggable = true
+ImageButton.Image = "http://www.roblox.com/asset/?id=132676475432173"
 
-v24.Parent = v23;
-v24.CornerRadius = UDim.new(0, 12);
+UICorner.CornerRadius = UDim.new(1, 10) 
+UICorner.Parent = ImageButton
 
-v25.Parent = v23;
-v25.LightEmission = 1;
-v25.Size = NumberSequence.new({
-    NumberSequenceKeypoint.new(0, 0.1),
-    NumberSequenceKeypoint.new(1, 0)
-});
-v25.Lifetime = NumberRange.new(0.5, 1);
-v25.Rate = 0;
-v25.Speed = NumberRange.new(5, 10);
-v25.Color = ColorSequence.new(Color3.fromRGB(255, 85, 255), Color3.fromRGB(85, 255, 255));
-
-local v47 = v26:Create(v23, TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {});
-
-v23.MouseButton1Down:Connect(function()
-    v25.Rate = 100;
-    task.delay(1, function()
-        v25.Rate = 0;
-    end);
-    v47:Play();
-    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game);
+ImageButton.MouseButton1Down:Connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
 end)
--- TABS
-local Tabs = {
-    A = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
-}
--- Script
-Tabs.A:AddSection("Script");
 
-Tabs.A:AddButton({
-    Title = "W-azure Hub",
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+repeat wait() until game:IsLoaded()
+local Window = Fluent:CreateWindow({
+    Title = "Script Tổng hợp",
+    SubTitle = "by thanhkhoi1611",
+    TabWidth = 157,
+    Size = UDim2.fromOffset(555, 320),
+    Acrylic = true,
+    Theme = "Aqua",
+    MinimizeKey = Enum.KeyCode.End
+})
+local Tabs = {
+        Main0 = Window:AddTab({ Title="Farming Script" }),
+        Main1 = Window:AddTab({ Title="Hopping Script" }),
+}
+
+Tabs.Main0:AddButton({
+    Title = "Banana Cat Hub",
+    Description = "90min Key",
+    Callback = function()
+	  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "stdBFPlRKpiHeUfeTValOaJIicgMYQWm"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+    end
+})
+
+Tabs.Main0:AddButton({
+    Title = "W-aruze",
     Description = "No Key",
     Callback = function()
-getgenv().Team = "Marines"
+	  getgenv().Team = "Marines"
 getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
 getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
     end
 })
 
-Tabs.A:AddButton({
+Tabs.Main0:AddButton({
     Title = "Redz Hub",
     Description = "No Key",
     Callback = function()
-local Settings = {
+	  local Settings = {
   JoinTeam = "Marines"; -- Pirates/Marines
   Translator = false; -- true/false
 }
@@ -85,30 +70,28 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/re
     end
 })
 
-Tabs.A:AddButton({
+Tabs.Main0:AddButton({
     Title = "Maru Hub",
     Description = "No Key",
     Callback = function()
-getgenv().Team = "Marines"
+	  getgenv().Team = "Marines"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/KimP/refs/heads/main/MaruHub"))()
     end
 })
 
-Tabs.A:AddButton({
+Tabs.Main0:AddButton({
     Title = "HoHo Hub",
     Description = "Get Key",
     Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
     end
 })
 
-Tabs.A:AddSection("Kaitun Script");
-
-Tabs.A:AddButton({
+Tabs.Main1:AddButton({
     Title = "Simple Hub",
     Description = "No Key",
     Callback = function()
-getgenv().simple_settings = {
+	  getgenv().simple_settings = {
     ["MASTERY"] = { -- Settings related to leveling up weapon or skill mastery
         ["ACTIVE"] = true, -- Enable or disable mastery leveling (true = enabled, false = disabled)
         ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[350] or "Full"[600]
@@ -159,11 +142,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/
     end
 })
 
-Tabs.A:AddButton({
+Tabs.Main1:AddButton({
     Title = "Royx Hub",
     Description = "No Key",
     Callback = function()
-getgenv().ConfigsKaitun = {
+	  getgenv().ConfigsKaitun = {
     ["Safe Mode"] = false, -- Will be pass all anti cheat (but slow farm)
     
     ["Melee"] = {
