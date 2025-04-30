@@ -33,7 +33,7 @@ local Window = Fluent:CreateWindow({
 })
 local Tabs = {
         Main0 = Window:AddTab({ Title="Farming Script" }),
-        Main1 = Window:AddTab({ Title="Hopping Script" }),
+        Main1 = Window:AddTab({ Title="Kaitun Script" }),
 }
 
 Tabs.Main0:AddButton({
