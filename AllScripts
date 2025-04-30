@@ -5,8 +5,8 @@ repeat wait() until game:IsLoaded()
 local Window = Fluent:CreateWindow({
     Title = "Script Tổng Hợp",
     SubTitle = "by thanhkhoi1611",
-    TabWidth = 300,
-    Size = UDim2.fromOffset(520, 420),
+    TabWidth = 200,
+    Size = UDim2.fromOffset(530, 450),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Aqua",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
@@ -55,11 +55,11 @@ v23.MouseButton1Down:Connect(function()
 end)
 -- TABS
 local Tabs = {
-    A = Window:AddTab({ Title = "Script", Icon = "" }),
-}
-    B = Window:AddTab({ Title = "Kaitun Script", Icon = "" }),
+    A = Window:AddTab({ Title = "", Icon = "🇻🇳" }),
 }
 -- Script
+Tabs.A:AddSection("Script");
+
 Tabs.A:AddButton({
     Title = "Banana Cat Hub",
     Description = "Get Free Key",
@@ -111,7 +111,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/L
     end
 })
 
-Tabs.B:AddButton({
+Tabs.A:AddSection("Kaitun Script");
+
+Tabs.A:AddButton({
     Title = "Simple Hub",
     Description = "No Key",
     Callback = function()
@@ -166,7 +168,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/
     end
 })
 
-Tabs.B:AddButton({
+Tabs.A:AddButton({
     Title = "Royx Hub",
     Description = "No Key",
     Callback = function()
