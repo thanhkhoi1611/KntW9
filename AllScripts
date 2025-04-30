@@ -55,7 +55,7 @@ v23.MouseButton1Down:Connect(function()
 end)
 -- TABS
 local Tabs = {
-    A = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
+    A = Window:AddTab({ Title = "", Icon = "🇻🇳" }),
 }
 -- Script
 Tabs.A:AddSection("Script");
