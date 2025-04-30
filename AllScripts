@@ -55,11 +55,11 @@ v23.MouseButton1Down:Connect(function()
 end)
 -- TABS
 local Tabs = {
-    A = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
+    A = Window:AddTab({ Title = "Script", Icon = "" }),
+}
+    B = Window:AddTab({ Title = "Kaitun Script", Icon = "" }),
 }
 -- Script
-Tabs.A:AddSection("Script");
-
 Tabs.A:AddButton({
     Title = "Banana Cat Hub",
     Description = "Get Free Key",
@@ -111,9 +111,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/L
     end
 })
 
-Tabs.A:AddSection("Kaitun Script");
-
-Tabs.A:AddButton({
+Tabs.B:AddButton({
     Title = "Simple Hub",
     Description = "No Key",
     Callback = function()
@@ -168,7 +166,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/
     end
 })
 
-Tabs.A:AddButton({
+Tabs.B:AddButton({
     Title = "Royx Hub",
     Description = "No Key",
     Callback = function()
