@@ -62,6 +62,16 @@ local Tabs = {
 Tabs.A:AddSection("Script");
 
 Tabs.A:AddButton({
+    Title = "Banana Cat Hub",
+    Description = "1h Key",
+    Callback = function()
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "stdBFPlRKpiHeUfeTValOaJIicgMYQWm 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
     Title = "W-azure Hub",
     Description = "No Key",
     Callback = function()
