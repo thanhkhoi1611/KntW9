@@ -5,7 +5,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 --
 local Window = Fluent:CreateWindow({
     Title = "Script Tổng Hợp",
-    SubTitle = "By White",
+    SubTitle = "by thanhkhoi1611",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 380), -- 480,360 or 530, 350
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
@@ -26,9 +26,9 @@ v23.Parent = v22;
 v23.BackgroundColor3 = Color3.fromRGB(0, 0, 0);
 v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
-v23.Size = UDim2.new(0, 70, 0, 70);
+v23.Size = UDim2.new(0, 60, 0, 60);
 v23.Draggable = true;
-v23.Image = "http://www.roblox.com/asset/?id=79798004565147"; 
+v23.Image = "http://www.roblox.com/asset/?id=125891619064938";
 
 v24.Parent = v23;
 v24.CornerRadius = UDim.new(0, 12);
@@ -56,8 +56,9 @@ v23.MouseButton1Down:Connect(function()
 end)
 -- TABS
 local Tabs = {
-    A = Window:AddTab({ Title = "Information", Icon = "" }),
+    A = Window:AddTab({ Title = "Main", Icon = "" }),
 }
+-- Script
 Tabs.A:AddButton({
     Title = "W-azure Hub",
     Description = "No Key",
