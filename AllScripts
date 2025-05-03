@@ -56,7 +56,7 @@ v23.MouseButton1Down:Connect(function()
 end)
 -- Tabs
 local Tabs = {
-    A = Window:AddTab({ Title = "Main", Icon = "" }),
+    A = Window:AddTab({ Title = "Script", Icon = "" }),
 }
 -- Script
 Tabs.A:AddButton({
@@ -80,6 +80,15 @@ local Settings = {
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "Hiru Hub",
+    Description = "No Key",
+    Callback = function()
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubVeriV2.lua"))()
     end
 })
 
