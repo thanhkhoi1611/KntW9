@@ -114,7 +114,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/L
 Tabs.A:AddSection("Kaitun Script");
 
 Tabs.A:AddButton({
-    Title = "Kaitun 1",
+    Title = "Royx Hub",
     Description = "No Key",
     Callback = function()
 .KaitunConfig = {
@@ -232,7 +232,7 @@ loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0
 })
 
 Tabs.A:AddButton({
-    Title = "Kaitun 2",
+    Title = "Mukuro Hub",
     Description = "No Key",
     Callback = function()
 getgenv().Mode = "OneClick"
@@ -272,3 +272,5 @@ getgenv().Setting = {
 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
+    end
+})
