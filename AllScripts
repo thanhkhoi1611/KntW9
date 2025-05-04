@@ -59,8 +59,6 @@ local Tabs = {
     A = Window:AddTab({ Title = "Script", Icon = "" }),
 }
 -- Script
-Tabs.B:AddSection("Farming Script");
-
 Tabs.A:AddButton({
     Title = "W-azure Hub",
     Description = "No Key",
