@@ -97,18 +97,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/re
 })
 
 Tabs.A:AddButton({
-    Title = "Volcano Hub",
+    Title = "Xeter Hub",
     Description = "No Key",
     Callback = function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/indexeduu/BF-NewVer/refs/heads/main/V3New.lua"))()
-    end
-})
-
-Tabs.A:AddButton({
-    Title = "Hoho Hub",
-    Description = "Get Key",
-    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+getgenv().Version = "V2"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
     end
 })
 
@@ -121,11 +114,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs
 })
 
 Tabs.A:AddButton({
-    Title = "Xeter Hub",
+    Title = "Volcano Hub",
     Description = "No Key",
     Callback = function()
-getgenv().Version = "V2"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/indexeduu/BF-NewVer/refs/heads/main/V3New.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "Hoho Hub",
+    Description = "Get Key",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
     end
 })
 
