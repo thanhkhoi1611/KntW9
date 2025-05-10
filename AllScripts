@@ -114,6 +114,9 @@ Tabs.A:AddButton({
     Description = "No Key",
     Callback = function()
 getgenv().Team = "Marines"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubVeriV2.lua"))()
+getgenv().DuyKiddoDevTeam = true
+getgenv().Team = "Marines"
+getgenv().Chat = "Hiru Hub On Top"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubKiddo.lua"))()
     end
 })
