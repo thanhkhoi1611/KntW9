@@ -71,6 +71,30 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc61
 })
 
 Tabs.A:AddButton({
+    Title = "Shinichi Hub",
+    Description = "No Key",
+    Callback = function()
+repeat wait() until game:IsLoaded()
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shinichi-dz/phucshinsayhi/refs/heads/main/ShinichiHub.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "Hiru Hub",
+    Description = "No Key",
+    Callback = function()
+getgenv().Team = "Marines"
+getgenv().DuyKiddoDevTeam = true
+getgenv().Team = "Marines"
+getgenv().Chat = "..."
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubKiddo.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
     Title = "Redz Hub",
     Description = "No Key",
     Callback = function()
@@ -84,14 +108,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/re
 })
 
 Tabs.A:AddButton({
-    Title = "Hoho Hub",
-    Description = "Get Key",
-    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
-    end
-})
-
-Tabs.A:AddButton({
     Title = "Volcano Hub",
     Description = "No Key",
     Callback = function()
@@ -100,13 +116,9 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/indexeduu/BF-New
 })
 
 Tabs.A:AddButton({
-    Title = "Hiru Hub",
-    Description = "No Key",
+    Title = "Hoho Hub",
+    Description = "Get Key",
     Callback = function()
-getgenv().Team = "Marines"
-getgenv().DuyKiddoDevTeam = true
-getgenv().Team = "Marines"
-getgenv().Chat = "..."
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubKiddo.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
     end
 })
