@@ -7,7 +7,7 @@ local Window = Fluent:CreateWindow({
     Title = "Script Tổng Hợp",
     SubTitle = "by thanhkhoi1611",
     TabWidth = 160,
-    Size = UDim2.fromOffset(530, 400),
+    Size = UDim2.fromOffset(530, 350),
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark", -- Rose, Dark, Light, Darker, Aqua
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
@@ -26,7 +26,7 @@ v23.Parent = v22;
 v23.BackgroundColor3 = Color3.fromRGB(0, 0, 0);
 v23.BorderSizePixel = 0;
 v23.Position = UDim2.new(0.120833337 - 0.1, 0, 0.0952890813 + 0.01, 0);
-v23.Size = UDim2.new(0, 60, 0, 60);
+v23.Size = UDim2.new(0, 50, 0, 50);
 v23.Draggable = true;
 v23.Image = "http://www.roblox.com/asset/?id=125891619064938";
 
@@ -96,16 +96,6 @@ Tabs.A:AddButton({
     Description = "No Key",
     Callback = function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/indexeduu/BF-NewVer/refs/heads/main/V3New.lua"))()
-    end
-})
-
-Tabs.A:AddButton({
-    Title = "Shinichi Hub",
-    Description = "No Key",
-    Callback = function()
-getgenv().Team = "Marines"
-repeat wait() until game:IsLoaded()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shinichi-dz/phucshinsayhi/refs/heads/main/ShinichiHub.lua"))()
     end
 })
 
