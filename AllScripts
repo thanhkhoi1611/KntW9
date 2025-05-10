@@ -56,7 +56,8 @@ v23.MouseButton1Down:Connect(function()
 end)
 -- Tabs
 local Tabs = {
-    A = Window:AddTab({ Title = "Script", Icon = "" }),
+    A = Window:AddTab({ Title = "Main", Icon = "" }),
+    B = Window:AddTab({ Title = "Fix Lag", Icon = "" }),
 }
 -- Script
 Tabs.A:AddButton({
@@ -108,5 +109,30 @@ Tabs.A:AddButton({
     Description = "Get Key",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "TrẩuRoblox Hub",
+    Description = "No Key",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXtVn"))()
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "Xeter Hub",
+    Description = "No Key",
+    Callback = function()
+getgenv().Version = "V2"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
+    end
+})
+
+Tabs.B:AddButton({
+    Title = "Turbo Lite Hub",
+    Description = "No Key",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
     end
 })
