@@ -97,31 +97,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main
 })
 
 Tabs.A:AddButton({
-    Title = "Xeter Hub",
-    Description = "No Key",
-    Callback = function()
-getgenv().Version = "V1"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
-    end
-})
-
-Tabs.A:AddButton({
-    Title = "TrẩuRoblox Hub",
-    Description = "No Key",
-    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXtVn"))()
-    end
-})
-
-Tabs.A:AddButton({
-    Title = "Volcano Hub",
-    Description = "No Key",
-    Callback = function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/indexeduu/BF-NewVer/refs/heads/main/V3New.lua"))()
-    end
-})
-
-Tabs.A:AddButton({
     Title = "Hoho Hub",
     Description = "Get Key",
     Callback = function()
