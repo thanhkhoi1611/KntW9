@@ -110,16 +110,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shinichi-dz/phucshins
 })
 
 Tabs.A:AddButton({
-    Title = "TrẩuRoblox Hub",
-    Description = "No Key",
-    Callback = function()
-getgenv().Team = "Marines" -- Pirates or Marines
-getgenv().FixAttack = true -- để false nếu không bị ban fast attack
-loadstring(game:HttpGet("https://raw.githubusercontent.com/stuckez999/main/refs/heads/main/traurobloxpremium.lua"))()
-    end
-})
-
-Tabs.A:AddButton({
     Title = "Hiru Hub",
     Description = "No Key",
     Callback = function()
