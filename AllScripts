@@ -116,7 +116,7 @@ Tabs.A:AddButton({
 getgenv().Team = "Marines"
 getgenv().DuyKiddoDevTeam = true
 getgenv().Team = "Marines"
-getgenv().Chat = "thanhkhoi1611"
+getgenv().Chat = "..."
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubKiddo.lua"))()
     end
 })
