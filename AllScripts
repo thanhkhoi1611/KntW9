@@ -124,7 +124,7 @@ Tabs.A:AddButton({
     Title = "Xeter Hub",
     Description = "No Key",
     Callback = function()
-getgenv().Version = "V1"
+getgenv().Version = "V2"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
     end
 })
