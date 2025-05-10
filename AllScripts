@@ -4,10 +4,10 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 -- Name
 local Window = Fluent:CreateWindow({
-    Title = "Script Tổng Hợp",
+    Title = "Script Tổng Hợp - Blox Fruits",
     SubTitle = "by thanhkhoi1611",
     TabWidth = 160,
-    Size = UDim2.fromOffset(530, 380),
+    Size = UDim2.fromOffset(530, 400),
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark", -- Rose, Dark, Light, Darker, Aqua
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
