@@ -72,18 +72,6 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc61
 })
 
 Tabs.A:AddButton({
-    Title = "Hiru Hub",
-    Description = "No Key",
-    Callback = function()
-getgenv().Team = "Marines"
-getgenv().DuyKiddoDevTeam = true
-getgenv().Team = "Marines"
-getgenv().Chat = "..."
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubKiddo.lua"))()
-    end
-})
-
-Tabs.A:AddButton({
     Title = "Redz Hub",
     Description = "No Key",
     Callback = function()
@@ -97,10 +85,22 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/re
 })
 
 Tabs.A:AddButton({
+    Title = "Hiru Hub",
+    Description = "No Key",
+    Callback = function()
+getgenv().Team = "Marines"
+getgenv().DuyKiddoDevTeam = true
+getgenv().Team = "Marines"
+getgenv().Chat = "..."
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubKiddo.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
     Title = "Xeter Hub",
     Description = "No Key",
     Callback = function()
-getgenv().Version = "V2"
+getgenv().Version = "V1"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
     end
 })
