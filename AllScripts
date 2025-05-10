@@ -90,3 +90,40 @@ Tabs.A:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
     end
 })
+
+Tabs.A:AddButton({
+    Title = "Volcano Hub",
+    Description = "No Key",
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/indexeduu/BF-NewVer/refs/heads/main/V3New.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "Shinichi Hub",
+    Description = "No Key",
+    Callback = function()
+getgenv().Team = "Marines"
+repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shinichi-dz/phucshinsayhi/refs/heads/main/ShinichiHub.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "TrẩuRoblox Hub",
+    Description = "No Key",
+    Callback = function()
+getgenv().Team = "Marines" -- Pirates or Marines
+getgenv().FixAttack = true -- để false nếu không bị ban fast attack
+loadstring(game:HttpGet("https://raw.githubusercontent.com/stuckez999/main/refs/heads/main/traurobloxpremium.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "Hiru Hub",
+    Description = "No Key",
+    Callback = function()
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaStupid/Source/main/HiruHubVeriV2.lua"))()
+    end
+})
