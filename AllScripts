@@ -85,6 +85,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/re
 })
 
 Tabs.A:AddButton({
+    Title = "Redz Hub",
+    Description = "No Key",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangNguyenk8/Roblox/refs/heads/main/BF-Main.luau"))()
+    end
+})
+
+Tabs.A:AddButton({
     Title = "Hoho Hub",
     Description = "Get Key",
     Callback = function()
