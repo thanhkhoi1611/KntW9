@@ -85,7 +85,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/re
 })
 
 Tabs.A:AddButton({
-    Title = "Redz Hub",
+    Title = "Zinner Hub",
     Description = "No Key",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangNguyenk8/Roblox/refs/heads/main/BF-Main.luau"))()
