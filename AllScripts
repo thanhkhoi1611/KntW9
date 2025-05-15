@@ -1,3 +1,11 @@
+local keys = {
+    ["a²+b²=c²"] = true,
+}
+
+if getgenv().TKey and keys[getgenv().TKey] then
+    print("Valid Key!")
+else 
+    game.Players.LocalPlayer:Kick("Invalid Key")
 -- Fluent UI
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
