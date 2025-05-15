@@ -1,5 +1,5 @@
 -- Fluent UI
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+ocal Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 -- Name
@@ -7,7 +7,7 @@ local Window = Fluent:CreateWindow({
     Title = "Script Tổng Hợp",
     SubTitle = "by thanhkhoi1611",
     TabWidth = 160,
-    Size = UDim2.fromOffset(530, 350),
+    Size = UDim2.fromOffset(450, 350),
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark", -- Rose, Dark, Light, Darker, Aqua
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
