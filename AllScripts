@@ -93,6 +93,30 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangNguyenk8/Roblox/
 })
 
 Tabs.A:AddButton({
+    Title = "Vxeze Hub",
+    Description = "No Key",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubMain"))()
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "Volcano Hub",
+    Description = "No Key",
+    Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/indexeduu/BF-NewVer/refs/heads/main/V3New.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
+    Title = "Aurora Hub",
+    Description = "No Key",
+    Callback = function()
+loadstring(game:HttpGet(&quot;https://raw.githubusercontent.com/Jadelly261/BloxFruits/main/Aurora&quot;, true))()
+    end
+})
+
+Tabs.A:AddButton({
     Title = "Hoho Hub",
     Description = "Get Key",
     Callback = function()
