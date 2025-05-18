@@ -56,7 +56,7 @@ v23.MouseButton1Down:Connect(function()
 end)
 -- Tabs
 local Tabs = {
-    A = Window:AddTab({ Title = "Main", Icon = "" }),
+    A = Window:AddTab({ Title = "Script", Icon = "" }),
 }
 -- Script
 Tabs.A:AddButton({
