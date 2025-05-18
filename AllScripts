@@ -57,7 +57,6 @@ end)
 -- Tabs
 local Tabs = {
     A = Window:AddTab({ Title = "Main", Icon = "" }),
-    B = Window:AddTab({ Title = "Fix Lag", Icon = "" }),
 }
 -- Script
 Tabs.A:AddButton({
@@ -93,6 +92,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/HoangNguyenk8/Roblox/
 })
 
 Tabs.A:AddButton({
+    Title = "Banana Hub V1",
+    Description = "No Key",
+    Callback = function()
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MinGamingHubNew/Banana/refs/heads/main/Banana.lua"))()
+    end
+})
+
+Tabs.A:AddButton({
     Title = "Vxeze Hub",
     Description = "No Key",
     Callback = function()
@@ -121,13 +129,5 @@ Tabs.A:AddButton({
     Description = "Get Key",
     Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
-    end
-})
-
-Tabs.B:AddButton({
-    Title = "Turbo Lite Hub",
-    Description = "No Key",
-    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
     end
 })
